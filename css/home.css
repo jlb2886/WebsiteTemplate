@@ -1,0 +1,125 @@
+/*Change the Theme based on the website
+  Just change out the variables in the "--main-hue"
+  "--secondary-hue" and "--text-hue" to whatever color
+  theme suits the website*/
+:root{
+  /*theme 1*/
+  --th1Blue: #3b6978;
+  --th1Cream: #e7dfd5;
+  --th1White: #ffffff;
+  --th1DarkBlue: #204051;
+  /*theme 2*/
+  --th2Blue: #1b6ca8;
+  --th2GreenBlue: #0a97b0;
+  --th2Pink: #ffd3e1;
+  --th2Baige: #fce8d5;
+  /*theme 3 ROCHESTAIR*/
+  --th3Blue: rgb(24,31,41);
+  --th3Red: rgb(128,27,29);
+  /*theme 4 DEFAULT*/
+  --th4Grey: #222831;
+  --th4DarkBlue: #30475e;
+  --th4Baige: #c1a57b;
+  /** MAIN SECOND THIRD TEXT COLORS**/
+  --main-hue : var(--th3Blue);
+  --second-hue: var(--th4Baige);
+  --third-hue: var(--th4Grey);
+  --text-hue: var(--th1White);
+}
+
+body {
+  padding-top: 60px;
+}
+
+footer{
+  /*CHANGED WITH VARIABLE TO SUIT THEME*/
+  background-color: var(--third-hue);
+}
+
+nav {
+  /*CHANGED WITH VARIABLE TO SUIT THEME*/
+  background-color: var(--third-hue);
+}
+
+iframe {
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.stickers {
+  text-align: center;
+  margin: 5em;
+}
+
+.paragraphContainer {
+  text-align: center;
+}
+
+.paragraph {
+  color: black;
+  font-size: 1.25em;
+  margin: 1em;
+  width: 40em;
+  display: inline-block;
+}
+
+.largerText {
+  color: black;
+  font-weight: lighter;
+  font-size: 2.5em;
+  margin: 1em;
+  width: 30em;
+  display: inline-block;
+}
+
+.logo {
+  margin-right: 1em;
+  width: 50px;
+}
+
+.card {
+  background-color: var(--main-hue)
+}
+
+.pageHeaderBox {
+  justify-content: center;
+  height: 11em;
+  /*CHANGE TO SUIT THEME*/
+  background-color: var(--main-hue);
+  color: var(--text-hue)
+}
+
+.pageHeader {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 3em;
+}
+
+.textBlurb {
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+
+/* Gallery */
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
