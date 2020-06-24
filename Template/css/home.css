@@ -33,12 +33,12 @@ body {
 
 footer{
   /*CHANGED WITH VARIABLE TO SUIT THEME*/
-  background-color: var(--third-hue);
+  background-color: var(--main-hue);
 }
 
 nav {
   /*CHANGED WITH VARIABLE TO SUIT THEME*/
-  background-color: var(--third-hue);
+  background-color: var(--main-hue);
 }
 
 iframe {
@@ -86,7 +86,7 @@ iframe {
   justify-content: center;
   height: 11em;
   /*CHANGE TO SUIT THEME*/
-  background-color: var(--main-hue);
+  background-color: var(--third-hue);
   color: var(--text-hue)
 }
 
@@ -122,4 +122,34 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+}
+
+/*Ticker to reveal it is for the simulation*/
+
+.marquee {
+  height: 25px;
+  width: auto;
+  position: relative;
+  color: black;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  height: 30px;
+  margin-top: 1em;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: auto;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
 }
