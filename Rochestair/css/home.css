@@ -86,7 +86,7 @@ iframe {
   justify-content: center;
   height: 11em;
   /*CHANGE TO SUIT THEME*/
-  background-color: var(--main-hue);
+  background-color: var(--third-hue);
   color: var(--text-hue)
 }
 
@@ -140,7 +140,7 @@ div.desc {
   margin-top: 1em;
   position: absolute;
   overflow: hidden;
-  animation: marquee 15s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 
 .marquee span {
@@ -148,6 +148,56 @@ div.desc {
   width: auto;
   white-space: nowrap;
 }
+
+/* VIDEO */
+
+.showcase {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--primary-color) url('./https://traversymedia.com/downloads/cover.jpg') no-repeat center
+  center/cover;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.video-container:after {
+  content: '';
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+.content {
+  z-index: 2;
+}
+
+/* END OF VIDEO */
 
 @keyframes marquee {
   0% { left: 0; }
