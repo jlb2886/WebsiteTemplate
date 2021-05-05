@@ -72,7 +72,7 @@
 <!-- Footer -->
 <footer class="py-5">
   <div class="container">
-    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    <p class="m-0 text-center text-white">© 2021 Bridgewater Investigations | ALL RIGHTS RESERVED.</p>
   </div>
   <!-- /.container -->
 </footer>
